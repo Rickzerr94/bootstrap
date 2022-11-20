@@ -1,0 +1,328 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #000000;
+  margin-bottom: 42px;
+}
+h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+h4{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.header_icon{
+  display: flex;
+  align-items: center;
+  li{
+    list-style: none;
+    &:first-of-type{
+      margin-right: 7px;
+      position: relative;
+      top: -2px;
+    }
+    &:last-of-type{
+      margin-right: 15px;
+    }
+
+  }
+}
+.container{
+  max-width: 1064px;
+}
+.navbar-brand{
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 7px;
+}
+.navbar-nav{
+  .nav-item{
+    margin-right: 20px;
+    .nav-link{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      color: #1C1B1B;
+
+    }
+  }
+}
+header{
+  padding-top: 15px;
+}
+.main_banner{
+  background-color: #F0EFEB;
+  padding: 90px 0 0;
+  p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 33px;
+  }
+  a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  .btn{
+    padding: 8px 23px;
+    border-radius: 23px;
+  }
+  .btn-dark{
+    transition: 0.5s;
+    &:hover{
+      background: #000000;
+    }
+  }
+  img{
+    position: relative;
+    top: -90px;
+    @include max-screen(767px){
+      width: 100%;
+      top: 0;
+    }
+  }
+}
+.guides{
+  padding: 60px 0 88px;
+  h3{
+    margin-bottom: 27px;
+  }
+  p{
+    max-width: 632px;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+}
+.sellers{
+  padding-bottom: 188px;
+  h3{
+    margin-bottom: 52px;
+  }
+  .card{
+    max-width: 309px;
+    display: inline-block;
+    border: none;
+    .card-title{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      color: #000000;
+    }
+    .card-text{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+      color: #000000;
+    }
+    a{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      &:hover{
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
+.people{
+  padding: 76px 0 51px;
+  background: rgba(204, 204, 204, 0.3);
+  .container{
+    max-width: 1064px;
+    .row{
+      .col-md-5{
+        @include max-screen(991px){
+          margin-bottom: 20px;
+        }
+      }
+      h3{
+        margin-bottom: 31px;
+      }
+      h4{
+        margin-bottom: 40px;
+      }
+      a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        &:hover{
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}
+.culture{
+  padding: 76px 0 51px;
+  background: rgba(204, 204, 204, 0.6);
+  .container{
+    max-width: 1064px;
+    .row{
+      h3{
+        margin-bottom: 31px;
+      }
+      h4{
+        margin-bottom: 40px;
+      }
+      a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        &:hover{
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}
+.power{
+  padding: 76px 0 51px;
+  background: rgba(204, 204, 204, 0.3);
+  .container{
+    max-width: 1064px;
+    .row{
+      .col-md-5{
+        @include max-screen(991px){
+          margin-bottom: 20px;
+        }
+      }
+      h3{
+        margin-bottom: 31px;
+      }
+      h4{
+        margin-bottom: 40px;
+      }
+      a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        &:hover{
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}
+
+.features{
+  padding: 190px 0 121px;
+  .container {
+    max-width: 1088px;
+
+    h4{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      color: #000000;
+    }
+    .articles {
+      article {
+        min-width: 339px;
+        .circle1 {
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          background: #21F7EC;
+          margin: 69px auto 26px;
+        }
+        .circle2 {
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          background: #33D3BC;;
+          margin: 69px auto 26px;
+        }
+        .circle3 {
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          background: #33D3BC;
+          margin: 69px auto 26px;
+        }
+        .circle4 {
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          background: #D38F62;
+          margin: 69px auto 26px;
+        }
+        .circle5 {
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          background: #F94C43;
+          margin: 69px auto 26px;
+        }
+        .circle6 {
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          background: #D399FF;
+          margin: 69px auto 26px;
+        }
+        h3{
+          font-size: 30px;
+          line-height: 35px;
+          text-align: center;
+          margin-bottom: 42px;
+        }
+      }
+    }
+  }
+}
